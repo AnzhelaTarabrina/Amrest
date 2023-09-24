@@ -1,0 +1,158 @@
+.link {
+  color: $color-primary;
+  text-decoration: underline;
+
+  &--danger {
+    color: $color-danger;
+  }
+
+  &--gray {
+    color: $color-gray;
+  }
+
+  &--light {
+    color: $color-light;
+  }
+
+  &--small {
+    font-size: 12px;
+  }
+
+  &--micro {
+    font-size: 10px;
+  }
+
+  &--fz-18 {
+    font-size: 18px;
+  }
+
+  &--medium {
+    font-weight: 500;
+  }
+
+  &--lh-120 {
+    line-height: 1.2;
+  }
+
+  &--not-underline {
+    text-decoration: none;
+  }
+
+  &--message {
+    position: relative;
+    text-decoration: none;
+    text-decoration-line: line-through;
+
+    &:before {
+      content: '\e807';
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      pointer-events: none;
+      font-family: 'iconsfont';
+      font-size: 14px;
+    }
+  }
+
+  &--delete {
+    text-decoration: none;
+    text-decoration-line: line-through;
+  }
+}
+
+.input {
+  height: 50px;
+  border-radius: 10px;
+  border: none;
+  padding: 0 15px;
+  outline: none;
+  border: 1px solid transparent;
+  transition: border .3s;
+
+  &:focus {
+    border-color: $color-primary;
+  }
+
+  &--error {
+    border-color: $color-danger;
+
+    &:focus {
+      border-color: $color-danger;
+    }
+  }
+}
+
+.text {
+  &--success {
+    color: $color-success;
+  }
+
+  &--danger {
+    color: $color-danger;
+  }
+
+  &--gray {
+    color: $color-gray;
+  }
+
+  &--light {
+    color: $color-light;
+  }
+
+  &--regular {
+    font-weight: 400;
+  }
+
+  &--semibold {
+    font-weight: 600;
+  }
+
+  &--fz-18 {
+    font-size: 18px;
+  }
+
+  &--small {
+    font-size: 12px;
+  }
+
+  &--micro {
+    font-size: 10px;
+  }
+
+  &--right {
+    text-align: right;
+  }
+
+  &--lh-110 {
+    line-height: 1.1;
+  }
+
+  &--lh-120 {
+    line-height: 1.2;
+  }
+}
+
+.italic {
+  font-style: italic;
+}
+
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.warning-icon {
+  display: inline-flex;
+  align-items: center;
+
+  &:after {
+    content: '\e80b';
+    margin-left: 11px;
+    font-family: 'iconsfont';
+    font-weight: normal;
+    font-size: 11px;
+    line-height: 1;
+    color: $color-danger;
+  }
+}

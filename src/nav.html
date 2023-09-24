@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1, maximum-scale=1">
+	<meta name="format-detection" content="telephone=no">
+	<link rel="shortcut icon" href="assets/img/favicon.ico">
+	<title>AmRest | Навигация</title>
+	<style>
+		.site-nav {
+			margin: 30px auto 20px;
+			max-width: 480px;
+		}
+
+		.site-nav__title {
+			font-size: 24px;
+		}
+
+		.site-nav__items {
+			margin-top: 20px;
+			padding: 20px;
+			background: #fff;
+			border-radius: 15px;
+			counter-reset: count;
+		}
+
+		.site-nav__title2 {
+			font-size: 20px;
+		}
+
+		.site-nav__list {
+			margin-top: 15px;
+		}
+
+		.site-nav__item {
+			margin: 5px 0;
+		}
+
+		.site-nav__link {
+			padding: 5px 0;
+			display: inline-block;
+			font-size: 14px;
+			color: #1c2f76;
+		}
+
+		.site-nav__link span {
+			display: inline-block;
+			transition: transform .3s;
+		}
+
+		.site-nav__link:hover span {
+			transform: translateX(5px);
+		}
+
+		.site-nav__link span:before {
+			counter-increment: count;
+			content: counter(count) ") ";
+		}
+
+		.site-nav__link:hover {
+			color: #1c2f76;
+		}
+	</style>
+</head>
+
+<body class="body">
+
+	<main>
+		<div class="container">
+			<div class="site-nav">
+				<div class="site-nav__title">Список страниц</div>
+				<div class="site-nav__items">
+					<div class="site-nav__list">
+						<div class="site-nav__item">
+							<a class="site-nav__link" href="index.html"><span>Библиотека элементов</span></a>
+						</div>
+					</div>
+					<div class="site-nav__list">
+						<div class="site-nav__item">
+							<a class="site-nav__link" href="company-request-documents.html"><span>АС компания - заявки / документы</span></a>
+						</div>
+					</div>
+					<div class="site-nav__list">
+						<div class="site-nav__item">
+							<a class="site-nav__link" href="admin-request.html"><span>Админ - заявки</span></a>
+						</div>
+						<div class="site-nav__item">
+							<a class="site-nav__link" href="admin-request-arhive.html"><span>Админ - заявки / архив</span></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+
+</body>
+
+</html>
