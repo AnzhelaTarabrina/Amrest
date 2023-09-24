@@ -1,0 +1,9 @@
+.btns-row {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+
+  &__btn {
+    width: 100%;
+  }
+}

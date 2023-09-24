@@ -1,0 +1,108 @@
+.checkbox {
+  display: inline-flex;
+  align-items: center;
+
+  &__input {
+    display: none;
+  }
+
+  &__switch {
+    position: relative;
+    flex: 0 0 auto;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: $color-gray-light;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.10) inset;
+    text-align: center;
+    cursor: pointer;
+  }
+
+  &__input:checked~&__switch {
+    &:before {
+      content: '';
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0.00) 0%, rgba(0, 0, 0, 0.08) 100%), $color-second;
+      box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
+    }
+  }
+
+  &__text {
+    margin-left: 5px;
+    user-select: none;
+    line-height: 1.28;
+    font-size: 10px;
+
+    &--fz-14 {
+      font-size: 14px;
+      margin-left: 10px;
+    }
+  }
+
+  &--box &__switch{
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    box-shadow: none;
+  }
+
+  &--box &__input:checked~&__switch {
+    &:before {
+      background: $color-primary;
+      box-shadow: none;
+    }
+  }
+
+  &--gray &__input:checked~&__switch {
+    &:before {
+      background: $color-gradient-gray;
+    }
+  }
+
+  &--mini &__switch{
+    width: 20px;
+    height: 20px;
+  }
+
+  &--icon &__switch {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:before {
+      display: none;
+    }
+
+    &:after {
+      font-family: 'iconsfont';
+      font-weight: normal;
+      font-size: 12px;
+      line-height: 1;
+      color: $color-gray;
+      transition: color .2s ease;
+    }
+
+    &--star {
+      &:after {
+        content: '\e80f';
+      }
+    }
+    &--minus {
+      &:after {
+        content: '\e810';
+      }
+    }
+  }
+  
+  &--icon &__input:checked~&__switch {
+    &:after {
+      color: $color-danger;
+    }
+  }
+}

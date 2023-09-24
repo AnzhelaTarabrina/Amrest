@@ -1,0 +1,79 @@
+.select {
+  position: relative;
+  z-index: 1;
+
+  &:after {
+    content: '\e800';
+    position: absolute;
+    right: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+    font-family: 'iconsfont';
+    font-size: 10px;
+  }
+
+  &__field {
+    position: relative;
+    padding: 7px 20px 7px 10px;
+    width: 100%;
+    height: 100%;
+    background: $color-gradient-light;
+    border: 1px solid $color-light;
+    outline: none;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.10);
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: 500;
+    color: #000;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    cursor: pointer;
+
+    &--py-11 {
+      padding-top: 11px;
+      padding-bottom: 11px;
+    }
+
+    &--py-12 {
+      padding-top: 12px;
+      padding-bottom: 12px;
+    }
+
+    &--fz-14 {
+      font-size: 14px;
+    }
+    
+    &--text-gray {
+      color: $color-gray;
+    }
+  }
+
+  &--two-arrow {
+    &:after {
+      content: '\e80c';
+      right: 10px;
+    }
+  }
+
+  &--w-200 {
+    width: 200px;
+  }
+
+  &--icon-gray {
+    &:after {
+      color: $color-gray;
+    }
+  }
+
+  &--full {
+    width: 100%;
+  }
+
+  &--lock {
+    &:after {
+      content: '\e805';
+    }
+  }
+}

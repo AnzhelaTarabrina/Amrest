@@ -1,0 +1,61 @@
+.form {
+  &__group {
+    &--flex {
+      display: flex;
+      gap: 20px;
+    }
+
+    &--flex-i-center {
+      align-items: center;
+    }
+
+    &--mt-15 {
+      margin-top: 15px;
+    }
+
+    &--mt-30 {
+      margin-top: 30px;
+    }
+  }
+
+  &__item {
+    flex-basis: calc(50% - 10px);
+    width: calc(50% - 10px);
+  }
+
+  &__item-fields {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  &__label {
+    margin-bottom: 8px;
+  }
+
+  &__input-box {
+    position: relative;
+  }
+
+  &__input {
+    padding-right: 30px;
+  }
+
+  &__input-text {
+    align-items: center;
+    color: $color-gray;
+    display: flex;
+    height: 100%;
+    position: absolute;
+    right: 10px;
+    top: 0;
+    
+    &:before {
+      font-size: 12px;
+    }
+  }
+
+  &__btns {
+    margin-top: 10px;
+  }
+}

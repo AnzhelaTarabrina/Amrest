@@ -1,0 +1,38 @@
+.notifications {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  width: 335px;
+  z-index: 3;
+
+  &__item {
+    padding: 11px 12px 11px 20px;
+    color: $color-light;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 60px;
+    border-radius: 5px;
+    background: $color-third;
+
+    &:not(:first-child) {
+      margin-top: 10px;
+    }
+
+    &--second {
+      background: $color-second;
+    }
+  }
+
+  &__item-text {
+    max-width: 200px;
+  }
+
+  &__item-icon {
+    padding: 8px;
+
+    &:before {
+      margin: 0;
+    }
+  }
+}
