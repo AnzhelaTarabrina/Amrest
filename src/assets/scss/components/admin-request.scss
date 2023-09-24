@@ -1,0 +1,82 @@
+.admin-request {
+  display: flex;
+
+  &__main {
+    flex: 0 0 217px;
+    padding: 27px 20px 20px 20px;
+    color: $color-light;
+    line-height: 1.6;
+    font-size: 12px;
+    border-radius: 5px 0 0 5px;
+
+    &--primary {
+      background: $color-primary;
+    }
+
+    &--second {
+      background: $color-second;
+    }
+
+    &--third {
+      background: $color-third;
+    }
+  }
+
+  &__body {
+    padding: 26px 20px 26px 20px;
+    line-height: 1.6;
+    flex-grow: 1;
+    display: flex;
+
+    &-name {
+      flex: 1 1 auto;
+      padding-right: 20px;
+    }
+
+    &-data {
+      flex: 0 0 116px;
+      padding-right: 20px;
+    }
+
+    &-company {
+      flex: 0 0 238px;
+      padding-right: 20px;
+
+      &--big {
+        flex: 0 0 357px;
+      }
+    }
+
+    &-action {
+      flex: 0 0 198px;
+
+      &--big {
+        flex: 0 0 317px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1190px) {
+  .admin-request {
+    &__body {
+      &-data {
+        flex: 0 0 89px;
+      }
+
+      &-company {
+        &--big {
+          flex: 0 0 307px;
+        }
+      }
+
+      &-action {
+        flex: 0 0 110px;
+
+        &--big {
+          flex: 0 0 260px;
+        }
+      }
+    }
+  }
+}

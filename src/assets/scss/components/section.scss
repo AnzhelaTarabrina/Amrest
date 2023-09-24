@@ -1,0 +1,39 @@
+.section {
+  padding-top: 80px;
+  padding-bottom: 80px;
+
+  &__menu {
+    margin-bottom: 23px;
+  }
+
+  &__header {
+    margin-bottom: 30px;
+
+    &-top {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    &-filter {
+      flex: 1 1 auto;
+    }
+
+    &--mb-40 {
+      margin-bottom: 40px;
+    }
+  }
+
+  &__pagination {
+    margin-top: 30px;
+  }
+
+  &__item {
+    border-radius: 5px;
+    background: $color-light;
+    
+    &:not(:first-child) {
+      margin-top: 10px;
+    }
+  }
+}

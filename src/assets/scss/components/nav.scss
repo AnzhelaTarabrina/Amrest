@@ -1,0 +1,15 @@
+.nav {
+  &__list {
+    display: flex;
+    gap: 19px;
+    flex-wrap: wrap;
+  }
+
+  &__link {
+    color: $color-primary;
+
+    &--active {
+      color: $color-gray;
+    }
+  }
+}

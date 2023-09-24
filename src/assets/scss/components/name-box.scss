@@ -1,0 +1,11 @@
+.name-box {
+  display: flex;
+
+  &__icon {
+    width: 20px;
+  }
+
+  &__content {
+    line-height: 1.4;
+  }
+}
