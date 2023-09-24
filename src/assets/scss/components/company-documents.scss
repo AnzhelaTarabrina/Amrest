@@ -1,0 +1,54 @@
+.company-documents {
+  padding: 25px 0 22px 20px;
+  line-height: 1.4;
+  display: flex;
+
+  &__name {
+    flex-grow: 1;
+    padding-right: 20px;
+  }
+
+  &__location {
+    flex: 0 0 237px;
+    padding-right: 20px;
+  }
+
+  &__progress {
+    flex: 0 0 357px;
+    padding-right: 20px;
+  }
+
+  &__status {
+    flex: 0 0 129px;
+    line-height: 1.6;
+    padding-right: 10px;
+  }
+
+  &__action {
+    flex: 0 0 88px;
+    padding-right: 11px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 1190px) {
+  .company-documents {
+    &__name {
+      padding-right: 10px;
+    }
+
+    &__location {
+      flex: 0 0 200px;
+      padding-right: 10px;
+    }
+  
+    &__progress {
+      flex: 0 0 290px;
+      padding-right: 10px;
+    }
+
+    &__action {
+      flex: 0 0 78px;
+    }
+  }
+}

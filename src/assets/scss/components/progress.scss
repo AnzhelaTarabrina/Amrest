@@ -1,0 +1,36 @@
+.progress {
+  margin-top: 5px;
+  position: relative;
+  width: 218px;
+  height: 10px;
+  background-color: #e5e5e5;
+  overflow: hidden;
+
+  &__done {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    background-color: $color-third;
+
+    &--success {
+      background-color: $color-success;
+    }
+
+    &--good {
+      background-color: $color-good;
+    }
+
+    &--danger {
+      background-color: $color-danger;
+    }
+  }
+
+  &--success {
+    background: $color-success;
+  }
+
+  &--danger {
+    background-color: $color-danger;
+  }
+}
