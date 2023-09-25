@@ -24,6 +24,10 @@
     align-items: center;
     justify-content: center;
     box-shadow: none;
+
+    &:hover {
+      transform: translateY(0);
+    }
   }
 
   &--light {
