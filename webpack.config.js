@@ -29,6 +29,8 @@ const optimization = () => {
 
 const htmlPageNames = [
 	'nav',
+	'rest-request',
+	'rest-request-arhive',
 	'company-request-documents',
 	'admin-request',
 	'admin-request-arhive',
