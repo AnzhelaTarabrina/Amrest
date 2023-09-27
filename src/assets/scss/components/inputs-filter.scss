@@ -1,5 +1,9 @@
 .inputs-filter {
-    display: flex;
-    align-items: center;
-    gap: 6px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+
+  &--w-180 {
+    width: 180px;
+  }
 }
