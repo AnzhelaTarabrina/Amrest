@@ -1,0 +1,42 @@
+.candidate-info {
+  &__text {
+    margin-top: 7px;
+    margin-bottom: 15px;
+  }
+
+  &__row {
+    margin-top: 28px;
+    display: flex;
+  }
+
+  &__col {
+    padding-right: 5px;
+    flex-basis: 48%;
+
+    &:first-child {
+      flex-basis: 52%;
+    }
+  }
+
+  &__item {
+    line-height: 1.4;
+  }
+
+  &__list {
+    margin-top: 28px;
+
+    &-item {
+      &:not(:first-child) {
+        margin-top: 16px;
+      }
+    }
+
+    &-title {
+      margin-bottom: 8px;
+    }
+  }
+
+  &__btns {
+    margin-top: 110px;
+  }
+}

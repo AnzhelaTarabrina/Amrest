@@ -13,6 +13,10 @@
       display: flex;
       align-items: center;
       gap: 10px;
+
+      &--gap-20 {
+        gap: 20px;
+      }
     }
 
     &-filter {

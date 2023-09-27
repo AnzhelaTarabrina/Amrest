@@ -1,0 +1,26 @@
+.breadcrumbs {
+  line-height: 1.9;
+
+  &__text,
+  &__current {
+    font-size: 24px;
+    font-weight: 900;
+    line-height: normal;
+    text-transform: uppercase;
+    &:not(:last-child) {
+      &:after {
+        content: '/';
+        margin-left: 5px;
+      }
+    }
+  }
+
+  &__text {
+    color: $color-gray;
+  }
+
+  &__current {
+    display: inline-block;
+    width: 100%;
+  }
+}

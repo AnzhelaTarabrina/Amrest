@@ -36,6 +36,10 @@
     &-data {
       flex: 0 0 116px;
       padding-right: 20px;
+
+      &--min {
+        flex: 0 0 96px;
+      }
     }
 
     &-company {
@@ -45,10 +49,19 @@
       &--big {
         flex: 0 0 357px;
       }
+
+      &--medium {
+        flex: 0 0 258px;
+      }
     }
 
     &-action {
       flex: 0 0 198px;
+      text-align: left;
+
+      .link {
+        text-align: left;
+      }
 
       &--big {
         flex: 0 0 317px;
@@ -71,7 +84,7 @@
       }
 
       &-action {
-        flex: 0 0 110px;
+        flex: 0 0 124px;
 
         &--big {
           flex: 0 0 260px;

@@ -3,6 +3,10 @@
     &--flex {
       display: flex;
       gap: 20px;
+
+      &-g-40 {
+        gap: 40px;
+      }
     }
 
     &--flex-i-center {
@@ -16,11 +20,21 @@
     &--mt-30 {
       margin-top: 30px;
     }
+
+    &--light {
+      border-radius: 5px;
+      background: $color-light;
+    }
   }
 
   &__item {
     flex-basis: calc(50% - 10px);
     width: calc(50% - 10px);
+
+    &--full {
+      flex-basis: auto;
+      width: 100%;
+    }
   }
 
   &__item-fields {
@@ -57,5 +71,13 @@
 
   &__btns {
     margin-top: 10px;
+
+    &--mt-40 {
+      margin-top: 40px;
+    }
+
+    &--mt-55 {
+      margin-top: 55px;
+    }
   }
 }

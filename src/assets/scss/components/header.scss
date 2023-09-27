@@ -11,12 +11,12 @@
     padding: 15px 0;
     display: flex;
     align-items: center;
-    justify-content: space-between;
     gap: 10px;
     min-height: 80px;
   }
   
   &__body {
+    flex-grow: 1;
     text-align: right;
 
     &-top {
@@ -27,5 +27,12 @@
     &-bottom {
       margin-top: 16px;
     }
+  }
+
+  &__switch {
+    width: 109px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
   }
 }

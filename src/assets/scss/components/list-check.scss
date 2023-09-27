@@ -1,0 +1,14 @@
+.list-check {
+  padding: 32px 65px 23px 30px;
+  
+  &__item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+
+    &:not(:first-child) {
+      margin-top: 17px;
+    }
+  }
+}

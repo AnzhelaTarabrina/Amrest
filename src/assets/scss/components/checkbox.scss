@@ -59,6 +59,11 @@
     }
   }
 
+  &--box-30 &__switch{
+    width: 30px;
+    height: 30px;
+  }
+
   &--gray &__input:checked~&__switch {
     &:before {
       background: $color-gradient-gray;
@@ -103,6 +108,37 @@
   &--icon &__input:checked~&__switch {
     &:after {
       color: $color-danger;
+    }
+  }
+
+  &--switch &__switch {
+    width: 70px;
+    height: 40px;
+    border-radius: 50px;
+  }
+
+  &--switch &__switch {
+    &:before {
+      content: '';
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-100%, -50%);
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      background: $color-gray;
+      box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
+      transition: all .2s ease;
+    }
+  }
+
+  &--switch &__input:checked~&__switch {
+    &:before {
+      width: 30px;
+      height: 30px;
+      transform: translate(0, -50%);
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0.00) 0%, rgba(0, 0, 0, 0.08) 100%), $color-second;
     }
   }
 }

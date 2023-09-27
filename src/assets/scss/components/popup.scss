@@ -10,6 +10,7 @@
   visibility: hidden;
   opacity: 0;
   transition: opacity .3s, visibility .3s;
+  min-width: 980px;
 
   &:before {
     content: '';
@@ -38,6 +39,14 @@
 
   &__form {
     margin-top: 33px;
+
+    &--mt-25 {
+      margin-top: 25px;
+    }
+
+    &--mt-50 {
+      margin-top: 50px;
+    }
   }
 
   &__close {
@@ -60,5 +69,24 @@
 
   &__btns {
     margin-top: 33px;
+  }
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    &-close {
+      padding-bottom: 7px;
+    }
+  }
+
+  &--full &__content {
+    height: 100%;
+    width: 100%
+  }
+
+  &--full &__container {
+    padding-top: 110px;
   }
 }
