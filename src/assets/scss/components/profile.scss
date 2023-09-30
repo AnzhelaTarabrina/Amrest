@@ -1,0 +1,79 @@
+.profile {
+  padding-top: 110px;
+  padding-bottom: 100px;
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    &-close {
+      padding-bottom: 7px;
+    }
+  }
+
+  &__body {
+    margin-top: 12px;
+  }
+
+  &__contacts {
+    line-height: 1.7;
+  }
+
+  &__filter {
+    margin-top: 13px;
+
+    &--flex {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+  }
+
+  &__info {
+    margin-top: 40px;
+    padding: 20px;
+    border-radius: 5px;
+    background: $color-light;
+
+    &-item {
+      display: flex;
+      gap: 20px;
+      &:not(:first-child) {
+        margin-top: 14px;
+      }
+    }
+
+    &-col {
+      flex-basis: calc(50% - 10px);
+    }
+  }
+
+  &__btns-row {
+    margin-top: 18px;
+  }
+
+  &__documents {
+    margin-top: 30px;
+  }
+
+  &__document {
+    &:not(:first-child) {
+      margin-top: 36px;
+      padding-top: 30px;
+      border-top: 1px solid rgba(0, 0, 0, 0.10);
+    }
+
+    &-item {
+      margin-top: 18px;
+    }
+  }
+
+  &__bottom {
+    margin-top: 38px;
+  }
+
+  &__table {
+    margin-top: 40px;
+  }
+}

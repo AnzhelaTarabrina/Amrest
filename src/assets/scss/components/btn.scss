@@ -8,12 +8,7 @@
   display: inline-block;
   border-radius: 5px;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.10);
-  transition: transform .3s;
   cursor: pointer;
-
-  &:hover {
-    transform: translateY(-5px);
-  }
 
   &--icon {
     height: 40px;
@@ -24,10 +19,6 @@
     align-items: center;
     justify-content: center;
     box-shadow: none;
-
-    &:hover {
-      transform: translateY(0);
-    }
   }
 
   &--light {
@@ -57,6 +48,12 @@
     padding: 13px 16px;
     font-size: 12px;
     font-weight: 600;
+  }
+
+  &--semibold {
+    padding: 22px 10px;
+    font-weight: 600;
+    font-size: 14px;
   }
 
   &--box {

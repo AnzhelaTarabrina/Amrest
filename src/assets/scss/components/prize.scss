@@ -1,0 +1,25 @@
+.prize {
+  &__item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    &:not(:first-child) {
+      margin-top: 7px;
+    }
+
+    &--mt-23 {
+      &:not(:first-child) {
+        margin-top: 23px;
+      }
+    }
+  }
+
+  &__col {
+    flex-basis: calc(50% - 10px);
+
+    &--pl-40 {
+      padding-left: 40px;
+    }
+  }
+}

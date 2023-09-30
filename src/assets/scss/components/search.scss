@@ -38,10 +38,6 @@
     transition: color .3s;
   }
 
-  &__btn:hover &__icon {
-    color: $color-primary;
-  }
-
   &--fill &__btn {
     &--submit {
       display: none;
