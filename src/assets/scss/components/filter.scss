@@ -40,6 +40,11 @@
       }
     }
 
+    &--active:last-child,
+    &.tabs-btn--active:last-child {
+      border-right: 1px solid $color-primary;
+    }
+
     &--active,
     &.tabs-btn--active {
       background: $color-primary;

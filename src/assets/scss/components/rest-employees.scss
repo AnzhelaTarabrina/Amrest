@@ -1,0 +1,36 @@
+.rest-employees {
+  padding: 23px 0px 20px 20px;
+  display: flex;
+  line-height: 1.6;
+  min-height: 87px;
+
+  &__name {
+    flex: 0 0 337px;
+    line-height: 1.4;
+    padding-right: 20px;
+  }
+  &__wages {
+    flex: 0 0 119px;
+    padding-right: 5x;
+  }
+  &__info {
+    flex: 1 1 auto;
+    padding-right: 20px;
+  }
+  &__action {
+    flex: 0 0 337px;
+    padding-right: 20px;
+  }
+}
+
+@media (max-width: 1190px) {
+  .rest-employees {
+    &__name {
+      flex: 0 0 290px;
+    }
+
+    &__action {
+      flex: 0 0 260px;
+    }
+  }
+}
