@@ -35,6 +35,7 @@ const htmlPageNames = [
 	'rest-employees-arhive',
 	'rest-employee',
 	'rest-employee-table',
+	'rest-company',
 	'company-request-documents',
 	'admin-request',
 	'admin-request-arhive',
