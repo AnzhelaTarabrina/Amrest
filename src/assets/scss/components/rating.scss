@@ -1,0 +1,42 @@
+.rating {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-direction: row-reverse;
+
+  &__input {
+    display: none;
+  }
+
+  &__input:checked,
+  &__input:checked~&__label{
+    color: #BA354D;
+  }
+
+  &__input--2:checked,
+  &__input--2:checked~&__label{
+    color: #EB5757;
+  }
+
+  &__input--3:checked,
+  &__input--3:checked~&__label{
+    color: $color-third;
+  }
+
+  &__input--4:checked,
+  &__input--4:checked~&__label{
+    color: $color-good;
+  }
+
+  &__input--5:checked,
+  &__input--5:checked~&__label{
+    color: $color-success;
+  }
+
+  &__label {
+    cursor: pointer;
+    font-size: 16px;
+    color: $color-gray;
+    transition: color .2s ease;
+  }
+}

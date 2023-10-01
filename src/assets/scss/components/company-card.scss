@@ -1,0 +1,52 @@
+.company-card {
+  &__top {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: space-between;
+  }
+
+  &__contacts {
+    margin-top: 25px;
+  }
+
+  &__contact {
+    line-height: 1.4;
+
+    &:not(:first-child) {
+      margin-top: 15px;
+    }
+  }
+
+  &__subtitle {
+    margin-top: 33px;
+  }
+
+  &__rates {
+    margin-top: 10px;
+  }
+
+  &__rate {
+    display: flex;
+    align-items: center;
+
+    &:not(:first-child) {
+      margin-top: 6px;
+    }
+
+    &-name {
+      padding-right: 10px;
+      flex: 1 1 auto;
+    }
+
+    &-col {
+      text-align: right;
+      padding-left: 5px;
+      flex: 0 0 59px;
+    }
+  }
+
+  &__btns {
+    margin-top: 38px;
+  }
+}
