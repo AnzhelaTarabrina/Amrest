@@ -1,3 +1,4 @@
+import '../../../node_modules/fslightbox';
 import '@/assets/scss/styles.scss';
 
 import './search.js';

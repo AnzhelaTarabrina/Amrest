@@ -52,6 +52,7 @@
   },
   "dependencies": {
     "gulp": "^4.0.2",
-    "normalize.css": "^8.0.1"
+    "normalize.css": "^8.0.1",
+    "fslightbox": "^3.4.1"
   }
 }
