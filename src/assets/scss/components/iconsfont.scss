@@ -38,6 +38,12 @@
     color: $color-light;
   }
 
+  &--danger {
+    &::before {
+      color: $color-danger;
+    }
+  }
+
   &--validation {
     display: flex;
     flex-direction: column;
@@ -47,6 +53,16 @@
 
     &::before {
       font-size: 20px;
+    }
+  }
+
+  &--warning {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+
+    &::before {
+      font-size: 10px;
     }
   }
 }

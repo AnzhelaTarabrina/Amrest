@@ -61,6 +61,10 @@
     }
   }
 
+  &--w-99 {
+    width: 99px;
+  }
+
   &--w-200 {
     width: 200px;
   }
@@ -84,6 +88,12 @@
   &--lock {
     &:after {
       content: '\e805';
+    }
+  }
+
+  &--not-arrow {
+    &:after {
+      display: none;
     }
   }
 }

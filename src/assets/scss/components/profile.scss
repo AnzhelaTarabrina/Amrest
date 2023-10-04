@@ -14,6 +14,10 @@
 
   &__body {
     margin-top: 12px;
+
+    &--mt-15 {
+      margin-top: 15px;
+    }
   }
 
   &__contacts {
@@ -47,10 +51,18 @@
     &-col {
       flex-basis: calc(50% - 10px);
     }
+
+    &--pb-24 {
+      padding-bottom: 24px;
+    }
   }
 
   &__btns-row {
     margin-top: 18px;
+
+    &--mt-35 {
+      margin-top: 35px;
+    }
   }
 
   &__documents {
@@ -83,5 +95,14 @@
 
   &__table {
     margin-top: 40px;
+  }
+
+  &__tabs {
+    margin-top: 40px;
+  }
+
+  &__contacts-title {
+    margin-top: 30px;
+    margin-bottom: 10px;
   }
 }

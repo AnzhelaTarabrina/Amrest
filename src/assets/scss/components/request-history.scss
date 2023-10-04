@@ -1,0 +1,32 @@
+.request-history {
+  &__item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    &:not(:first-child) {
+      margin-top: 10px;
+    }
+
+    &-col {
+      flex-basis: calc(50% - 10px);
+    }
+
+    &-group {
+      display: flex;
+      align-items: center;
+    }
+
+    &-box {
+      display: flex;
+      align-items: center;
+      
+      &--min {
+        flex: 0 0 119px;
+      }
+      &--auto {
+        flex: 1 1 auto;
+      }
+    }
+  }
+}

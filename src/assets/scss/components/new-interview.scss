@@ -1,0 +1,71 @@
+.new-interview {
+  margin-top: 40px;
+
+  &__top {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    &-left,
+    &-right {
+      flex-basis: calc(50% - 10px);
+    }
+
+    &-right {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+  }
+
+  &__search {
+    margin-top: 22px;
+  }
+
+  &__pagination {
+    margin-top: 10px;
+    max-width: 640px;
+  }
+
+  &__btns {
+    margin-top: 25px;
+    max-width: 640px;
+  }
+
+  &__table {
+    margin-top: 20px;
+    font-size: 12px;
+    line-height: 1.5;
+    border-collapse: collapse;
+    table-layout: fixed;
+    width: 100%;
+
+    tr:first-child {
+      td {
+        border-top: none;
+        padding: 0 0 14px;
+      }
+    }
+
+    td {
+      border-top: 1px solid rgba(0, 0, 0, 0.05);
+      position: relative;
+      padding: 15px 0 14px;
+      vertical-align: top;
+
+      &:nth-child(1) {
+        width: 355px;
+      }
+      &:nth-child(2) {
+        width: 119px;
+      }
+    }
+
+    &-checkbox {
+      position: absolute;
+      top: 50%;
+      left: -40px;
+      transform: translateY(-50%);
+    }
+  }
+}
