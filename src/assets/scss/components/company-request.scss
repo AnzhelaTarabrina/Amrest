@@ -1,0 +1,35 @@
+.company-request {
+  padding: 25px 0 22px 20px;
+  line-height: 1.5;
+  display: flex;
+
+  &__col {
+    padding-right: 20px;
+
+    &--name {
+      flex: 0 0 357px;
+    }
+
+    &--auto {
+      flex: 1 1 auto;
+    }
+
+    &--status {
+      flex: 0 0 119px;
+    }
+
+    &--action {
+      flex: 0 0 99px;
+    }
+  }
+}
+
+@media (max-width: 1190px) {
+  .company-request {
+    &__col {
+      &--name {
+        flex: 0 0 290px;
+      }
+    }
+  }
+}
