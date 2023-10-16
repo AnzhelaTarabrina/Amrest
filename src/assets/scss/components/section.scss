@@ -27,6 +27,23 @@
       flex: 1 1 auto;
     }
 
+    &-search {
+      margin-top: 20px;
+    }
+
+    &-control {
+      margin-top: 20px;
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+
+    &-item {
+      &--mw-98 {
+        max-width: 98px;
+      }
+    }
+
     &--mb-40 {
       margin-bottom: 40px;
     }
@@ -34,6 +51,9 @@
 
   &__pagination {
     margin-top: 30px;
+    &--mt-40 {
+      margin-top: 40px;
+    }
   }
 
   &__item {
