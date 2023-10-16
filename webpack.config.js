@@ -38,6 +38,8 @@ const htmlPageNames = [
 	'rest-company',
 	'company',
 	'company-request',
+	'company-request-interview',
+	'company-request-arhive',
 	'company-request-documents',
 	'admin-request',
 	'admin-request-arhive',
