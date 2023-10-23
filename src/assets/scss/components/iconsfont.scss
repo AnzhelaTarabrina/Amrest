@@ -20,6 +20,13 @@
     }
   }
 
+  &--fz-14 {
+    &::before {
+      font-size: 14px;
+      margin-right: 10px;
+    }
+  }
+
   &--fz-20 {
     &::before {
       font-size: 20px;
@@ -62,6 +69,17 @@
     gap: 4px;
 
     &::before {
+      font-size: 10px;
+    }
+  }
+
+  &--comment {
+    display: inline-flex;
+    align-items: flex-start;
+    gap: 5px;
+
+    &::before {
+      padding-top: 3px;
       font-size: 10px;
     }
   }
