@@ -41,6 +41,10 @@ const htmlPageNames = [
 	'company-request-interview',
 	'company-request-arhive',
 	'company-request-documents',
+	'company-application-before',
+	'company-application-after',
+	'company-application-validated',
+	'company-application-edit',
 	'admin-request',
 	'admin-request-arhive',
 ];
