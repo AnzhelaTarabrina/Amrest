@@ -18,6 +18,10 @@
     &--mt-15 {
       margin-top: 15px;
     }
+
+    &--mt-43 {
+      margin-top: 43px;
+    }
   }
 
   &__contacts {
@@ -104,5 +108,13 @@
   &__contacts-title {
     margin-top: 30px;
     margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 1190px) {
+  .profile {
+    &--form-comments {
+      transform: translateX(-105px);
+    }
   }
 }

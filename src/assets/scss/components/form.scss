@@ -1,5 +1,7 @@
 .form {
   &__group {
+    position: relative;
+
     &--flex {
       display: flex;
       gap: 20px;
@@ -13,12 +15,20 @@
       align-items: center;
     }
 
+    &--mt-6 {
+      margin-top: 6px;
+    }
+
     &--mt-10 {
       margin-top: 10px;
     }
 
     &--mt-15 {
       margin-top: 15px;
+    }
+
+    &--mt-18 {
+      margin-top: 18px;
     }
 
     &--mt-25 {
@@ -29,9 +39,22 @@
       margin-top: 30px;
     }
 
+    &--mt-36 {
+      margin-top: 36px;
+    }
+
+    &--mt-38 {
+      margin-top: 38px;
+    }
+
     &--light {
       border-radius: 5px;
       background: $color-light;
+    }
+
+    &--border {
+      border-top: 1px solid rgba(0, 0, 0, 0.10);
+      padding-top: 31px;
     }
   }
 
@@ -43,16 +66,49 @@
       flex-basis: auto;
       width: 100%;
     }
+
+    &--mini {
+      flex-basis: calc(20% - 20px);
+      width: calc(20% - 20px);
+    }
+
+    &--pr-4 {
+      padding-right: 4px;
+    }
   }
 
   &__item-fields {
     display: flex;
     align-items: center;
     gap: 10px;
+
+    &--g-20 {
+      gap: 20px;
+    }
+
+    &--g-30 {
+      gap: 30px;
+    }
+
+    &--g-60 {
+      gap: 60px;
+    }
   }
   
   &__label {
     margin-bottom: 8px;
+
+    &--mt-10 {
+      margin-top: 10px;
+    }
+
+    &--mb-15 {
+      margin-bottom: 15px;
+    }
+
+    &--mb-20 {
+      margin-bottom: 20px;
+    }
   }
 
   &__input-box {
@@ -90,6 +146,66 @@
 
     &--mt-55 {
       margin-top: 55px;
+    }
+  }
+
+  &__docs {
+    margin-top: 18px;
+  }
+
+  &__doc {
+    &:not(:first-child) {
+      margin-top: 18px;
+    }
+  }
+
+  &__doc-delete {
+    &:before {
+      margin-right: 8px;
+    }
+  }
+
+  &__docs-add {
+    display: block;
+
+    &--mt-18 {
+      margin-top: 18px;
+    }
+  }
+
+  &__list {
+    &-item {
+      &:not(:first-child) {
+        margin-top: 8px;
+      }
+    }
+  }
+
+  &__comments {
+    padding-left: 20px;
+    position: absolute;
+    width: 237px;
+    top: 30px;
+    left: 100%;
+    font-size: 12px;
+    line-height: 1.33;
+
+    &--top-15 {
+      top: 15px;
+    }
+  }
+
+  &__comment {
+    &:not(:first-child) {
+      margin-top: 6px;
+    }
+  }
+}
+
+@media (max-width: 1190px) {
+  .form {
+    &__comments {
+      width: 210px;
     }
   }
 }

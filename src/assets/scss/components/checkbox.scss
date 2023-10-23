@@ -47,6 +47,10 @@
     &--fz-12 {
       font-size: 12px;
     }
+
+    &--color-gray {
+      color: $color-gray;
+    }
   }
 
   &--box &__switch{
