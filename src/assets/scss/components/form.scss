@@ -75,6 +75,23 @@
     &--pr-4 {
       padding-right: 4px;
     }
+
+    &--lock {
+      position: relative;
+      padding-right: 15px;
+
+      &::after {
+        content: '\e805';
+        font-size: 12px;
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        pointer-events: none;
+        font-family: 'iconsfont';
+        color: $color-gray;
+      }
+    }
   }
 
   &__item-fields {
@@ -146,6 +163,10 @@
 
     &--mt-55 {
       margin-top: 55px;
+    }
+
+    &--mt-90 {
+      margin-top: 90px;
     }
   }
 
