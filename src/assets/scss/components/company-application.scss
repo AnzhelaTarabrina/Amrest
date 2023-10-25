@@ -1,0 +1,25 @@
+.company-application {
+  padding: 25px 0 23px 20px;
+  line-height: 1.5;
+  display: flex;
+
+  &__col {
+    padding-right: 20px;
+
+    &--name {
+      flex: 0 0 356px;
+    }
+
+    &--info {
+      flex: 0 0 98px;
+    }
+
+    &--auto {
+      flex: 1 1 auto;
+    }
+
+    &--action {
+      flex: 0 0 217px;
+    }
+  }
+}
