@@ -20,6 +20,13 @@
     }
   }
 
+  &--fz-12 {
+    &::before {
+      font-size: 12px;
+      margin-right: 10px;
+    }
+  }
+
   &--fz-14 {
     &::before {
       font-size: 14px;
@@ -43,6 +50,10 @@
 
   &--color-light {
     color: $color-light;
+  }
+
+  &--color-danger {
+    color: $color-danger;
   }
 
   &--danger {
@@ -98,4 +109,5 @@
 .icon-star:before { content: '\e80a'; } /* '' */
 .icon-warning:before { content: '\e80b'; } /* '' */
 .icon-two-arows:before { content: '\e80c'; } /* '' */
+.icon-update:before { content: '\e80e'; } /* '' */
 .icon-minus-circled:before { content: '\e810'; } /* '' */
