@@ -1,0 +1,61 @@
+.employee {
+  padding: 25px 5px 21px 20px;
+  line-height: 1.5;
+  display: flex;
+
+  &__col {
+    padding-right: 20px;
+
+    &--user {
+      flex: 0 0 335px;
+    }
+
+    &--info {
+      flex: 0 0 118px;
+    }
+
+    &--name {
+      flex: 0 0 237px;
+    } 
+
+    &--auto {
+      flex: 1 1 auto;
+    }
+
+    &--action {
+      flex: 0 0 212px;
+    }
+  }
+
+  &--danger {
+    padding: 20px 0 16px 15px;
+    border: 5px solid rgba(178, 8, 56, 0.12);
+  }
+
+  &--success {
+    padding: 20px 0 16px 15px;
+    border: 5px solid rgba(39, 174, 96, 0.18);
+  }
+}
+
+@media (max-width: 1190px) {
+  .employee {
+    &__col {
+      &--user {
+        flex: 0 0 260px;
+      }
+  
+      &--info {
+        flex: 0 0 108px;
+      }
+  
+      &--name {
+        flex: 0 0 217px;
+      } 
+
+      &--action {
+        flex: 0 0 190px;
+      }
+    }
+  }
+}

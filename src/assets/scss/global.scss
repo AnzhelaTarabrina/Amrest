@@ -59,6 +59,24 @@
     }
   }
 
+  &--update {
+    position: relative;
+    padding-left: 15px;
+    margin-left: -15px;
+
+    &:before {
+      content: '\e80e';
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      pointer-events: none;
+      font-family: 'iconsfont';
+      font-size: 11px;
+      color: $color-gray;
+    }
+  }
+
   &--delete {
     text-decoration: none;
     text-decoration-line: line-through;
