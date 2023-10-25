@@ -15,8 +15,16 @@
   &__body {
     margin-top: 12px;
 
+    &--mt-0 {
+      margin-top: 0px;
+    }
+
     &--mt-15 {
       margin-top: 15px;
+    }
+
+    &--mt-33 {
+      margin-top: 33px;
     }
 
     &--mt-43 {
@@ -54,6 +62,15 @@
 
     &-col {
       flex-basis: calc(50% - 10px);
+
+      &--w-32 {
+        flex-shrink: 0;
+        flex-basis: calc(32% - 10px);
+      }
+
+      &--full {
+        flex: 1 1 100%;
+      }
     }
 
     &--pb-24 {
@@ -67,6 +84,10 @@
     &--mt-35 {
       margin-top: 35px;
     }
+
+    &--mt-42 {
+      margin-top: 42px;
+    }
   }
 
   &__documents {
@@ -78,6 +99,20 @@
       margin-top: 36px;
       padding-top: 30px;
       border-top: 1px solid rgba(0, 0, 0, 0.10);
+    }
+
+    &-icon {
+      margin-left: -20px;
+      gap: 10px;
+    }
+
+    &-title {
+      &-row {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+      }
     }
 
     &-item {
