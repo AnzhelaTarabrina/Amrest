@@ -50,6 +50,11 @@ const htmlPageNames = [
 	'company-new-application-edit',
 	'company-employees',
 	'company-employee',
+	'admin-company',
+	'admin-company-card',
+	'admin-applications',
+	'admin-applications-documents',
+	'admin-employees',
 	'admin-request',
 	'admin-request-arhive',
 ];
