@@ -1,0 +1,48 @@
+.admin-application {
+  padding: 25px 0 20px 20px;
+  line-height: 1.5;
+  display: flex;
+  min-height: 87px;
+
+  &__col {
+    padding-right: 20px;
+
+    &--info {
+      flex: 0 0 98px;
+    }
+
+    &--auto {
+      flex: 1 1 auto;
+    }
+
+    &--city {
+      flex: 0 0 236px;
+    }
+
+    &--user {
+      flex: 0 0 356px;
+    }
+
+    &--btns {
+      flex: 0 0 217px;
+    }
+  }
+}
+
+@media (max-width: 1190px) {
+  .admin-application {
+    &__col {
+      &--user {
+        flex: 0 0 240px;
+      }
+
+      &--city {
+        flex: 0 0 190px;
+      }
+
+      &--btns {
+        flex: 0 0 180px;
+      }
+    }
+  }
+}

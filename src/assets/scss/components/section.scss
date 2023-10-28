@@ -42,6 +42,10 @@
       &--mw-98 {
         max-width: 98px;
       }
+
+      &--auto {
+        flex: 1 1 auto;
+      }
     }
 
     &--mb-40 {
