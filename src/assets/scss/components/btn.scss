@@ -54,6 +54,13 @@
     font-weight: 600;
   }
 
+  &--normal {
+    padding: 12px 25px;
+    font-weight: 500;
+    font-size: 14px;
+    flex-shrink: 0;
+  }
+
   &--semibold {
     padding: 22px 10px;
     font-weight: 600;
@@ -87,5 +94,12 @@
   &--py-20 {
     padding-top: 20px;
     padding-bottom: 20px;
+  }
+
+  &--inactive {
+    background: $color-gray-light;
+    color: $color-light;
+    box-shadow: none;
+    border: none;
   }
 }
