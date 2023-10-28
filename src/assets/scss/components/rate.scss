@@ -1,0 +1,38 @@
+.rate {
+  display: flex;
+  align-items: center;
+
+  &__star {
+    font-size: 16px;
+    line-height: 16px;
+    color: $color-gray;
+
+    &--active {
+      color: $color-third;
+    }
+  }
+
+  &--awfully {
+    .rate__star--active {
+      color: #BA354D;
+    }
+  }
+
+  &--bad {
+    .rate__star--active {
+      color: #EB5757;
+    }
+  }
+
+  &--good {
+    .rate__star--active {
+      color: $color-good;
+    }
+  }
+
+  &--success {
+    .rate__star--active {
+      color: $color-success;
+    }
+  }
+}

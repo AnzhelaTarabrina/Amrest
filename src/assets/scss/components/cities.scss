@@ -1,0 +1,11 @@
+.cities {
+  padding-right: 235px;
+  columns: 217px 2;
+  column-gap: 20px;
+
+  &__item {
+    page-break-inside: avoid;
+    break-inside: avoid;
+    margin-bottom: 17px;
+  }
+}

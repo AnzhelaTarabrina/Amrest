@@ -1,0 +1,27 @@
+.ratings-rest {
+  &__table {
+    margin-top: 20px;
+    border-collapse: collapse;
+    width: 100%;
+    table-layout: fixed;
+    font-size: 12px;
+
+    &-item {
+      padding-right: 20px;
+      padding-bottom: 12px;
+    }
+
+    tr td:nth-child(3) {
+      width: 119px;
+    }
+
+    tr td:last-child {
+      width: 99px;
+    }
+  }
+
+  &__pagination {
+    margin-top: 14px;
+    padding-right: 20px;
+  }
+}

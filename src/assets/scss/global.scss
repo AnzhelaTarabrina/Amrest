@@ -208,6 +208,11 @@
   }
 }
 
+.star-icon {
+  font-size: 14px;
+  line-height: 1;
+}
+
 .bg {
   padding: 20px;
   border-radius: 5px;
@@ -230,5 +235,14 @@
 
   &--pt-30 {
     padding-top: 30px;
+  }
+}
+
+.btn-add {
+  color: $color-primary;
+  font-weight: 500;
+  
+  span {
+    border-bottom: 1px solid $color-primary;
   }
 }
