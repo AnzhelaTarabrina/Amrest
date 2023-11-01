@@ -7,6 +7,10 @@
     &:not(:first-child) {
       margin-top: 11px;
     }
+
+    &--pt-6 {
+      padding-top: 6px;
+    }
   }
 
   &__fields {
@@ -17,6 +21,12 @@
 
   &__field {
     flex-basis: calc(50% - 7px);
+  }
+
+  &__field-text {
+    &--pt-4 {
+      padding-top: 4px;
+    }
   }
 
   &__filter{

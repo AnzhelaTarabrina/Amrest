@@ -56,6 +56,10 @@
     color: $color-danger;
   }
 
+  &--color-good {
+    color: $color-good;
+  }
+
   &--danger {
     &::before {
       color: $color-danger;
