@@ -57,6 +57,13 @@ const htmlPageNames = [
 	'admin-employees',
 	'admin-request',
 	'admin-request-arhive',
+	'hh-applications',
+	'hh-application-inspect',
+	'hh-employees',
+	'hh-company',
+	'hh-request',
+	'hh-request-arhive',
+	'hh-request-accept',
 ];
 const multipleHtmlPlugins = htmlPageNames.map(name => {
 	return new HTMLWebpackPlugin({
