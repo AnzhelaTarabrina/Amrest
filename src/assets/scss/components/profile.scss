@@ -107,6 +107,8 @@
     }
 
     &-title {
+      margin-bottom: 18px;
+
       &-row {
         display: flex;
         align-items: center;
@@ -116,7 +118,9 @@
     }
 
     &-item {
-      margin-top: 18px;
+      &:not(:first-child) {
+        margin-top: 18px;
+      }
 
       iframe {
         display: none;
@@ -143,6 +147,12 @@
   &__contacts-title {
     margin-top: 30px;
     margin-bottom: 10px;
+  }
+
+  &__company-list {
+    margin-top: 30px;
+    margin-left: -20px;
+    line-height: 1.7;
   }
 }
 

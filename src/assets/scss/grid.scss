@@ -1,5 +1,6 @@
 .container-big,
 .container,
+.container-mid,
 .container-medium,
 .container-small,
 .container-tiny {
@@ -14,6 +15,9 @@
 
 .container {
   max-width: 1204px;
+}
+.container-mid {
+  max-width: 967px;
 }
 
 .container-medium {

@@ -10,6 +10,22 @@
 
     &-col {
       flex-basis: calc(50% - 10px);
+
+      &--small {
+        flex-basis: calc(26.5% - 20px);
+      }
+
+      &--min {
+        flex-basis: calc(38% - 20px);
+      }
+
+      &--big {
+        flex-basis: calc(40% - 20px);
+      }
+
+      &--auto {
+        flex: 1 1 auto;
+      }
     }
 
     &-group {
