@@ -9,7 +9,7 @@
   td {
     padding: 5px 2px;
     border: 2px solid $color-bg;
-    background: $color-gray;
+    background: $color-gray-dark;
     color: $color-light;
     font-weight: 600;
     position: relative;
@@ -58,8 +58,8 @@
       height: calc(100% + 2px);
       top: 0;
       left: -2px;
-      border-left: 1px solid $color-gray;
-      border-right: 1px solid $color-gray;
+      border-left: 1px solid $color-gray-dark;
+      border-right: 1px solid $color-gray-dark;
       z-index: 1;
       pointer-events: none;
     }
@@ -69,13 +69,13 @@
     &::after {
       top: -2px;
       height: calc(100% + 4px);
-      border-top: 1px solid $color-gray;
+      border-top: 1px solid $color-gray-dark;
     }
   }
 
   tbody tr:last-child .table-hover {
     &::after {
-      border-bottom: 1px solid $color-gray;
+      border-bottom: 1px solid $color-gray-dark;
     }
   }
 }
