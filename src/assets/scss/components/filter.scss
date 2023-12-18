@@ -9,7 +9,7 @@
     border-top: 1px solid $color-light;
     border-bottom: 1px solid $color-light;
     border-right: 1px solid rgba(0, 0, 0, 0.05);
-    color: $color-primary;
+    color: $color-dark;
     white-space: nowrap;
     font-weight: 500;
 
@@ -43,16 +43,15 @@
 
     &--active:last-child,
     &.tabs-btn--active:last-child {
-      border-right: 1px solid $color-primary;
+      border-right: 1px solid $color-gray-dark;
     }
 
     &--active,
     &.tabs-btn--active {
-      background: $color-primary;
+      background: $color-gray-dark;
       cursor: default;
-      border: 1px solid $color-primary;
+      border: 1px solid $color-gray-dark;
       color: $color-light;
-      box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.20) inset;
 
       &:before {
         box-shadow: none;
@@ -152,6 +151,19 @@
 
   &--flex {
     display: flex;
+  }
+
+  &--accent {
+    .filter__btn--active:last-child,
+    .tabs-btn--active:last-child {
+      border-right: 1px solid $color-primary;
+    }
+
+    .filter__btn--active,
+    .tabs-btn--active {
+      background: $color-primary;
+      border: 1px solid $color-primary;
+    }
   }
 
 }

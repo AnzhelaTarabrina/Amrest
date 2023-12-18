@@ -3,7 +3,7 @@
   text-align: center;
   font-size: 36px;
   font-weight: 900;
-  background: $color-gradient-second;
+  background: $color-gradient-primary;
   padding: 39px 10px;
   display: inline-block;
   border-radius: 5px;
@@ -22,7 +22,7 @@
   }
 
   &--light {
-    color: $color-third;
+    color: $color-danger;
     background: $color-gradient-light;
   }
 
@@ -40,18 +40,27 @@
 
   &--border {
     border: 1px solid $color-light;
-    background: $color-third;
+    background: $color-danger;
   }
 
   &--medium {
     padding: 22px 16px;
     font-size: 18px;
+
+    &.btn--inactive {
+      background: $color-gray-dark;
+    }
   }
 
   &--small {
     padding: 13px 16px;
     font-size: 12px;
     font-weight: 600;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.10);
+
+    &.btn--inactive {
+      background: $color-gray-dark;
+    }
   }
 
   &--normal {
@@ -72,7 +81,7 @@
     font-size: 14px;
     font-weight: 500;
     border-radius: 5px;
-    color: $color-gray;
+    color: $color-dark;
     border: 1px solid $color-light;
     background: $color-gradient-light;
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.10);
@@ -80,6 +89,10 @@
 
   &--box-dark {
     color: #000000;
+  }
+
+  &--box-gray {
+    color: $color-gray;
   }
 
   &--fz-24 {
@@ -97,7 +110,7 @@
   }
 
   &--inactive {
-    background: $color-gray-light;
+    background: rgba($color-gray-dark, 0.88);
     color: $color-light;
     box-shadow: none;
     border: none;

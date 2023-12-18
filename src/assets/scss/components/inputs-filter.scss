@@ -3,6 +3,12 @@
   align-items: center;
   gap: 6px;
 
+  &__box {
+    &-text {
+      color: #080509;
+    }
+  }
+
   &--w-180 {
     width: 180px;
   }

@@ -1,19 +1,22 @@
-$color-primary:              #1b1464;
+$color-primary:              #AF78D2;
 $color-second:               #8971ff;
 $color-third:                #f7931e;
 $color-gray-light:           #E0E0E0;
 $color-gray:                 #9f9f9f;
+$color-gray-dark:            #ADAFAF;
+$color-dark:                 #58595B;
 $color-bg:                   #f2f2f2;
-$color-danger:               #b20838;
+$color-danger:               #E50915;
 $color-success:              #006237;
 $color-good:                 #27AE60;
 $color-light:                #ffffff;
 
+$color-gradient-primary:     linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, rgba(0, 0, 0, 0.06) 100%), $color-primary;
 $color-gradient-second:      linear-gradient(180deg, rgba(255, 255, 255, 0.10) 0%, rgba(255, 255, 255, 0.00) 100%), $color-second;
 $color-gradient-third:       linear-gradient(180deg, rgba(255, 255, 255, 0.00) 0%, rgba(0, 0, 0, 0.08) 100%), $color-third;
 $color-gradient-light:       linear-gradient(180deg, rgba(255, 255, 255, 0.00) 0%, rgba(0, 0, 0, 0.05) 100%), $color-light;
 
 $color-gradient-gray:        linear-gradient(180deg, rgba(255, 255, 255, 0.10) 0%, rgba(255, 255, 255, 0.00) 100%), $color-gray;
-$color-gradient-danger:      linear-gradient(180deg, rgba(255, 255, 255, 0.00) 0%, rgba(0, 0, 0, 0.05) 100%), $color-danger;
+$color-gradient-danger:      linear-gradient(180deg, rgba(255, 255, 255, 0.00) 0%, rgba(0, 0, 0, 0.06) 100%), $color-danger;
 
 $container-xs-offset:        20px;

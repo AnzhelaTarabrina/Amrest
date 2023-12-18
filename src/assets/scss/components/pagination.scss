@@ -16,18 +16,17 @@
     text-align: center;
     white-space: nowrap;
     font-weight: 600;
-    color: $color-primary;
+    color: #000;
   }
 
   &__active {
     color: $color-light;
-    background: $color-primary;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.20) inset;
+    background: $color-gray-dark;
   }
 
   &__link {
     background: $color-gradient-light;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.10);
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.10);
   }
 
   &--min &__active, 

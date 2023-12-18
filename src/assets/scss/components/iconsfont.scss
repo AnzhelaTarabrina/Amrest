@@ -45,7 +45,11 @@
   }
 
   &--color-gray {
-    color: $color-gray;
+    color: $color-gray-dark;
+  }
+
+  &--color-dark {
+    color: $color-dark;
   }
 
   &--color-light {

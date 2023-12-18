@@ -7,7 +7,7 @@
   }
 
   &--gray {
-    color: $color-gray;
+    color: $color-gray-dark;
   }
 
   &--light {
@@ -16,6 +16,10 @@
 
   &--dark {
     color: #000000;
+  }
+
+  &--color-dark {
+    color: $color-dark;
   }
 
   &--small {
@@ -110,6 +114,10 @@
 }
 
 .text {
+  &--primary {
+    color: $color-primary;
+  }
+
   &--success {
     color: $color-success;
   }
@@ -119,7 +127,11 @@
   }
 
   &--gray {
-    color: $color-gray;
+    color: $color-gray-dark;
+  }
+
+  &--dark {
+    color: $color-dark;
   }
 
   &--light {
