@@ -121,7 +121,6 @@
       cursor: default;
       border: 1px solid $color-primary;
       color: $color-light;
-      box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.20) inset;
 
       &:after {
         box-shadow: none;
@@ -138,13 +137,12 @@
 
     &--gray {
       &:last-child .checkbox__input:checked~.checkbox__switch {
-        border-right: 1px solid $color-gray;
+        border-right: 1px solid $color-gray-dark;
       }
       
       .checkbox__input:checked~.checkbox__switch {
-        border: 1px solid $color-gray;
-        background: $color-gray;
-        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.10) inset;
+        border: 1px solid $color-gray-dark;
+        background: $color-gray-dark;
       }
     }
   }
