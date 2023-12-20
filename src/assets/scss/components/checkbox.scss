@@ -27,7 +27,7 @@
       width: 10px;
       height: 10px;
       border-radius: 50%;
-      background: $color-dark;
+      background: $color-gradient-primary;
       box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
     }
   }
@@ -68,6 +68,12 @@
     }
   }
 
+  &--box.checkbox--gray &__input:checked~&__switch {
+    &:before {
+      background: $color-gradient-gray;
+    }
+  }
+
   &--box-30 &__switch{
     width: 30px;
     height: 30px;
@@ -75,7 +81,7 @@
 
   &--gray &__input:checked~&__switch {
     &:before {
-      background: $color-gradient-gray;
+      background: $color-gradient-dark;
     }
   }
 
@@ -84,13 +90,6 @@
     height: 20px;
     background: #E0E0E0;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.10) inset;
-  }
-
-  &--mini &__input:checked~&__switch{
-    &:before {
-      background: $color-gradient-primary;
-      box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
-    }
   }
 
   &--icon &__switch {
