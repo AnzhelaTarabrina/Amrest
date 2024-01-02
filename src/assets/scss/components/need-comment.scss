@@ -1,0 +1,27 @@
+.need-comment {
+  display: flex;
+  gap: 20px;
+
+  &--ai-fe {
+    align-items: flex-end;
+  }
+
+  &__content {
+    flex: 1 1 auto;
+  }
+
+  &__text {
+    padding: 16px 20px 21px;
+    border-radius: 5px;
+    background-color: $color-light;
+    line-height: 1.3;
+  }
+
+  &__descr {
+    max-width: 575px;
+  }
+
+  &__action {
+    flex: 0 0 335px;
+  }
+}

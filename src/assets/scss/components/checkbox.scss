@@ -51,6 +51,10 @@
     &--color-gray {
       color: $color-gray;
     }
+
+    &--color-danger {
+      color: $color-danger;
+    }
   }
 
   &--box &__switch{
@@ -81,15 +85,19 @@
 
   &--gray &__input:checked~&__switch {
     &:before {
-      background: $color-gradient-dark;
+      background: $color-gray-dark;
+    }
+  }
+
+  &--danger &__input:checked~&__switch {
+    &:before {
+      background: $color-danger;
     }
   }
 
   &--mini &__switch{
     width: 20px;
     height: 20px;
-    background: #E0E0E0;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.10) inset;
   }
 
   &--icon &__switch {

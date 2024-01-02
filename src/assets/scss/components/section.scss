@@ -48,6 +48,10 @@
       }
     }
 
+    &--mb-10 {
+      margin-bottom: 10px;
+    }
+
     &--mb-40 {
       margin-bottom: 40px;
     }
@@ -67,5 +71,13 @@
     &:not(:first-child) {
       margin-top: 10px;
     }
+  }
+
+  &__need-comment {
+    margin-top: 10px;
+  }
+
+  &__need-header {
+    margin-bottom: 10px;
   }
 }
