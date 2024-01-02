@@ -109,6 +109,11 @@
     padding-bottom: 20px;
   }
 
+  &--px-5 {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
   &--inactive {
     background: rgba($color-gray-dark, 0.88);
     color: $color-light;

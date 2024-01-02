@@ -49,6 +49,7 @@
     &--active,
     &.tabs-btn--active {
       background: $color-gray-dark;
+      box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.10) inset;
       cursor: default;
       border: 1px solid $color-gray-dark;
       color: $color-light;
@@ -71,6 +72,12 @@
     &--py-7 {
       padding-top: 7px;
       padding-bottom: 7px;
+    }
+
+    &--mw-108 {
+      padding: 5px;
+      text-align: center;
+      min-width: 108px;
     }
   }
 

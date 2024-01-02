@@ -162,6 +162,10 @@
     text-align: right;
   }
 
+  &--center {
+    text-align: center;
+  }
+
   &--lh-110 {
     line-height: 1.1;
   }
@@ -176,6 +180,10 @@
 
   &--lh-140 {
     line-height: 1.4;
+  }
+
+  &--lh-150 {
+    line-height: 1.5;
   }
 
   &--uppercase {

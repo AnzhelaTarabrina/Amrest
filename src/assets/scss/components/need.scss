@@ -1,0 +1,24 @@
+.need {
+  padding: 28.5px 20px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+
+  &--py-10 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  &--py-25 {
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+
+  &__title {
+    flex: 0 0 197px;
+  }
+
+  &__item {
+    flex: 0 0 98px;
+  }
+}
