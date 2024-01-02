@@ -33,10 +33,20 @@
       margin-right: 10px;
     }
   }
+  &--fz-15 {
+    &::before {
+      font-size: 15px;
+    }
+  }
 
   &--fz-20 {
     &::before {
       font-size: 20px;
+    }
+  }
+  &--mr-6 {
+    &::before {
+      margin-right: 6px;
     }
   }
 
@@ -46,6 +56,10 @@
 
   &--color-gray {
     color: $color-gray-dark;
+  }
+
+  &--color-light-gray {
+    color: #E5E5E5;
   }
 
   &--color-dark {
@@ -67,6 +81,12 @@
   &--danger {
     &::before {
       color: $color-danger;
+    }
+  }
+
+  &--gray {
+    &::before {
+      color: $color-gray;
     }
   }
 
@@ -119,3 +139,4 @@
 .icon-two-arows:before { content: '\e80c'; } /* '' */
 .icon-update:before { content: '\e80e'; } /* '' */
 .icon-minus-circled:before { content: '\e810'; } /* '' */
+.icon-user:before { content: '\e80f'; } /* '' */
