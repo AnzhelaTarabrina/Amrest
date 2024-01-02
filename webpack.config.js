@@ -36,6 +36,8 @@ const htmlPageNames = [
 	'rest-employee',
 	'rest-employee-table',
 	'rest-company',
+	'rest-needs',
+	'rest-needs-moderation',
 	'company',
 	'company-request',
 	'company-request-interview',
@@ -64,6 +66,8 @@ const htmlPageNames = [
 	'hh-request',
 	'hh-request-arhive',
 	'hh-request-accept',
+	'recruiter-needs',
+	'recruiter-needs-moderation',
 ];
 const multipleHtmlPlugins = htmlPageNames.map(name => {
 	return new HTMLWebpackPlugin({
