@@ -1,0 +1,73 @@
+.recruiter-need {
+  padding: 20px;
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+
+  &__title {
+    flex: 0 0 315px;
+    &-item {
+      display: flex;
+      gap: 10px;
+
+      &:not(:first-child) {
+        margin-top: 2px;
+      }
+    }
+
+    &-icon {
+      text-align: center;
+      width: 20px;
+      flex-shrink: 0;
+    }
+  }
+
+  &__content {
+    flex: 1 1 auto;
+    &-top {
+      display: flex;
+      gap: 20px;
+    }
+
+    &-user {
+      flex: 0 0 217px;
+    }
+
+    &-item {
+      flex: 0 0 98px;
+    }
+
+    &-bottom {
+      margin-top: 44px;
+
+      &--mt-19 {
+        margin-top: 19px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1190px) {
+  .recruiter-need {
+    gap: 10px;
+
+    &__title {
+      flex: 0 0 240px;
+      }
+  
+    &__content {
+      &-top {
+        gap: 8px;
+      }
+  
+      &-user {
+        flex: 0 0 182px;
+      }
+  
+      &-item {
+        flex: 0 0 87px;
+      }
+  
+    }
+  }
+}

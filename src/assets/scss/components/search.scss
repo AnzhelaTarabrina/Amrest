@@ -1,6 +1,10 @@
 .search {
   position: relative;
 
+  &--w-690 {
+    width: 690px;
+  }
+
   &__input {
     width: 100%;
     height: 100%;
@@ -15,6 +19,11 @@
 
     &::placeholder {
       color: $color-dark;
+    }
+
+    &--py-13 {
+      padding-top: 13px;
+      padding-bottom: 13px;
     }
   }
 
