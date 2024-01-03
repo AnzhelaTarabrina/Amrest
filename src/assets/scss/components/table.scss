@@ -4,7 +4,7 @@
   table-layout: fixed;
   font-size: 12px;
   line-height: 1.16;
-  color: #000000;
+  color: $color-dark;
 
   th,
   td {
@@ -18,12 +18,12 @@
 
   th.table__th-black {
     padding: 5px 8px;
-    background: #000000;
+    background: $color-dark;
   }
 
   td {
     background: $color-gray-light;
-    color: #000000;
+    color: $color-dark;
     font-weight: 500;
     text-align: center;
 
