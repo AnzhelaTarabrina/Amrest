@@ -79,13 +79,14 @@
 							<a class="filter__btn filter__btn--mw-108 filter__btn--active" href="recruiter-needs-moderation.html">На <br> согласовании</a>
 						</div>
 						<div class="select-popup">
-							<div class="select select-popup__btn">
-								<button type="button" class="select__field select__field--py-12">Маркет менеджер</button>
+							<div class="select-popup__header">
+								<button type="button" class="select-popup__btn"> <span>Маркет менеджер (2)</span></button>
 							</div>
 							<div class="select-popup__body">
-								<div class="select-popup__title">Маркет менеджер</div>
+								<div class="select-popup__search">
+									<input class="settings-input settings-input--filter select-popup__search-input" placeholder="Найти">
+								</div>
 								<div class="select-popup__content">
-									<input class="settings-input settings-input--filter select-popup__search" placeholder="Найти">
 									<ul class="select-popup__list">
 										<li class="select-popup__item">
 											<label class="checkbox checkbox--mini">
@@ -116,40 +117,56 @@
 												<span class="checkbox__switch"></span>
 												<span class="checkbox__text checkbox__text--fz-12">Маркет менеджер 4</span>
 											</label>
-										</li>
-										<li class="select-popup__item">
-											<label class="checkbox checkbox--mini">
-												<input class="checkbox__input" type="checkbox">
-												<span class="checkbox__switch"></span>
-												<span class="checkbox__text checkbox__text--fz-12">Маркет менеджер 5</span>
-											</label>
-										</li>
-										<li class="select-popup__item">
-											<label class="checkbox checkbox--mini">
-												<input class="checkbox__input" type="checkbox" checked>
-												<span class="checkbox__switch"></span>
-												<span class="checkbox__text checkbox__text--fz-12">Маркет менеджер 6</span>
-											</label>
-										</li>
-										<li class="select-popup__item">
-											<label class="checkbox checkbox--mini">
-												<input class="checkbox__input" type="checkbox">
-												<span class="checkbox__switch"></span>
-												<span class="checkbox__text checkbox__text--fz-12">Маркет менеджер 7</span>
-											</label>
-										</li>
-										<li class="select-popup__item">
-											<label class="checkbox checkbox--mini">
-												<input class="checkbox__input" type="checkbox">
-												<span class="checkbox__switch"></span>
-												<span class="checkbox__text checkbox__text--fz-12">Маркет менеджер 8</span>
-											</label>
+											<ul class="select-popup__sublist">
+												<li class="select-popup__item">
+													<label class="checkbox checkbox--mini">
+														<input class="checkbox__input" type="checkbox">
+														<span class="checkbox__switch"></span>
+														<span class="checkbox__text checkbox__text--fz-12">Маркет менеджер 5</span>
+													</label>
+												</li>
+												<li class="select-popup__item">
+													<label class="checkbox checkbox--mini">
+														<input class="checkbox__input" type="checkbox" checked>
+														<span class="checkbox__switch"></span>
+														<span class="checkbox__text checkbox__text--fz-12">Маркет менеджер 6</span>
+													</label>
+												</li>
+												<li class="select-popup__item">
+													<label class="checkbox checkbox--mini">
+														<input class="checkbox__input" type="checkbox">
+														<span class="checkbox__switch"></span>
+														<span class="checkbox__text checkbox__text--fz-12">Маркет менеджер 7</span>
+													</label>
+												</li>
+												<li class="select-popup__item">
+													<label class="checkbox checkbox--mini">
+														<input class="checkbox__input" type="checkbox">
+														<span class="checkbox__switch"></span>
+														<span class="checkbox__text checkbox__text--fz-12">Маркет менеджер 8</span>
+													</label>
+												</li>
+											</ul>
 										</li>
 										<li class="select-popup__item">
 											<label class="checkbox checkbox--mini">
 												<input class="checkbox__input" type="checkbox">
 												<span class="checkbox__switch"></span>
 												<span class="checkbox__text checkbox__text--fz-12">Маркет менеджер 9</span>
+											</label>
+										</li>
+										<li class="select-popup__item">
+											<label class="checkbox checkbox--mini">
+												<input class="checkbox__input" type="checkbox" checked>
+												<span class="checkbox__switch"></span>
+												<span class="checkbox__text checkbox__text--fz-12">Маркет менеджер 10</span>
+											</label>
+										</li>
+										<li class="select-popup__item">
+											<label class="checkbox checkbox--mini">
+												<input class="checkbox__input" type="checkbox">
+												<span class="checkbox__switch"></span>
+												<span class="checkbox__text checkbox__text--fz-12">Маркет менеджер 11</span>
 											</label>
 										</li>
 									</ul>
@@ -200,23 +217,20 @@
 				</div>
 				<div class="section__body">
 					<div class="section__items">
-						<div class="recruiter-need section__item">
+						<div class="accordion recruiter-need section__item">
 							<div class="recruiter-need__title">
-								<div class="recruiter-need__title-item">
+								<div class="recruiter-need__title-icons">
 									<div class="recruiter-need__title-icon">
 										<label class="checkbox checkbox--mini checkbox--danger">
 											<input class="checkbox__input" type="checkbox" checked>
 											<span class="checkbox__switch"></span>
 										</label>
 									</div>
-									<a href="#" class="link link--not-underline">KFC Гражданский проспект</a>
-								</div>
-								<div class="recruiter-need__title-item">
 									<div class="recruiter-need__title-icon">
 										<div class="icon icon--fz-15 icon-warning icon--color-light-gray"></div>
 									</div>
-									<button class="link link--not-underline">Санкт-Петербург ↓</button>
 								</div>
+								<button class="accordion-btn link link--medium recruiter-need__title-btn">KFC Гражданский проспект <br> Санкт-Петербург ↓</button>
 							</div>
 							<div class="recruiter-need__content">
 								<div class="recruiter-need__content-top">
@@ -225,25 +239,142 @@
 									</div>
 									<div class="recruiter-need__content-item"></div>
 								</div>
+								<div class="accordion-content bottom-need recruiter-need__content-bottom">
+									<div class="text text--right text--small text--danger bottom-need__message">Не согласованные изменения выделены красным</div>
+									<div class="bottom-need__items bottom-need__items--pt-0">
+										<div class="bottom-need__item bottom-need__item--py-9">
+											<div class="bottom-need__col bottom-need__col--big">
+												<div class="text">Сотрудник (12)</div>
+											</div>
+											<div class="bottom-need__col">
+												<label class="checkbox checkbox--mini checkbox--danger">
+													<input class="checkbox__input" type="checkbox" checked>
+													<span class="checkbox__switch"></span>
+													<span class="checkbox__text checkbox__text--color-danger checkbox__text--fz-14">16+</span>
+												</label>
+											</div>
+											<div class="bottom-need__col">
+												<label class="checkbox checkbox--mini checkbox--danger">
+													<input class="checkbox__input" type="checkbox">
+													<span class="checkbox__switch"></span>
+													<span class="checkbox__text checkbox__text--color-danger checkbox__text--fz-14">Утро</span>
+												</label>
+											</div>
+											<div class="bottom-need__col">
+												<label class="checkbox checkbox--mini">
+													<input class="checkbox__input" type="checkbox" checked>
+													<span class="checkbox__switch"></span>
+													<span class="checkbox__text checkbox__text--fz-14">Вечер</span>
+												</label>
+											</div>
+											<div class="bottom-need__col">
+												<label class="checkbox checkbox--mini">
+													<input class="checkbox__input" type="checkbox">
+													<span class="checkbox__switch"></span>
+													<span class="checkbox__text checkbox__text--fz-14">Любое</span>
+												</label>
+											</div>
+											<div class="bottom-need__col bottom-need__col--mini">
+												<input type="text" class="settings-input settings-input--need settings-input--bg settings-input--color-danger" value="5">
+											</div>
+										</div>
+										<div class="bottom-need__item bottom-need__item--py-9">
+											<div class="bottom-need__col bottom-need__col--big">
+												<div class="text">Уборщик (4)</div>
+											</div>
+											<div class="bottom-need__col">
+												<label class="checkbox checkbox--mini">
+													<input class="checkbox__input" type="checkbox" checked>
+													<span class="checkbox__switch"></span>
+													<span class="checkbox__text checkbox__text--fz-14">16+</span>
+												</label>
+											</div>
+											<div class="bottom-need__col">
+												<label class="checkbox checkbox--mini">
+													<input class="checkbox__input" type="checkbox">
+													<span class="checkbox__switch"></span>
+													<span class="checkbox__text checkbox__text--fz-14">Утро</span>
+												</label>
+											</div>
+											<div class="bottom-need__col">
+												<label class="checkbox checkbox--mini checkbox--danger">
+													<input class="checkbox__input" type="checkbox" checked>
+													<span class="checkbox__switch"></span>
+													<span class="checkbox__text checkbox__text--color-danger checkbox__text--fz-14">Вечер</span>
+												</label>
+											</div>
+											<div class="bottom-need__col">
+												<label class="checkbox checkbox--mini">
+													<input class="checkbox__input" type="checkbox">
+													<span class="checkbox__switch"></span>
+													<span class="checkbox__text checkbox__text--fz-14">Любое</span>
+												</label>
+											</div>
+											<div class="bottom-need__col bottom-need__col--mini">
+												<input type="text" class="settings-input settings-input--need settings-input--bg" value="5">
+											</div>
+										</div>
+										<div class="bottom-need__item bottom-need__item--py-9">
+											<div class="bottom-need__col bottom-need__col--big">
+												<div class="text">Грузчик (0)</div>
+											</div>
+											<div class="bottom-need__col">
+												<label class="checkbox checkbox--mini">
+													<input class="checkbox__input" type="checkbox" checked>
+													<span class="checkbox__switch"></span>
+													<span class="checkbox__text checkbox__text--fz-14">16+</span>
+												</label>
+											</div>
+											<div class="bottom-need__col">
+												<label class="checkbox checkbox--mini">
+													<input class="checkbox__input" type="checkbox">
+													<span class="checkbox__switch"></span>
+													<span class="checkbox__text checkbox__text--fz-14">Утро</span>
+												</label>
+											</div>
+											<div class="bottom-need__col">
+												<label class="checkbox checkbox--mini">
+													<input class="checkbox__input" type="checkbox" checked>
+													<span class="checkbox__switch"></span>
+													<span class="checkbox__text checkbox__text--fz-14">Вечер</span>
+												</label>
+											</div>
+											<div class="bottom-need__col">
+												<label class="checkbox checkbox--mini">
+													<input class="checkbox__input" type="checkbox">
+													<span class="checkbox__switch"></span>
+													<span class="checkbox__text checkbox__text--fz-14">Любое</span>
+												</label>
+											</div>
+											<div class="bottom-need__col bottom-need__col--mini">
+												<input type="text" class="settings-input settings-input--need settings-input--bg settings-input--color-danger" value="5">
+											</div>
+										</div>
+									</div>
+									<div class="bottom-need__comment">
+										<textarea class="settings-input settings-input--color-danger settings-input--bg settings-input--p-16-20 settings-input--mh-90">Поле для внесения текстового комментария дополнительных бонусов ресторана. Пример: «Оплачиваемый проезд, трудоустройство с локальным проживанием» и тд.</textarea>
+									</div>
+									<div class="bottom-need__action bottom-need__action--flex">
+										<button class="link link--medium link--not-underline bottom-need__action-item bottom-need__action-item--217 js-open-popup" data-popup-name="edit-message">Редактировать <br> сообщение ресторану</button>
+										<button class="btn btn--normal btn--px-5 bottom-need__action-item bottom-need__action-item--auto">Сохранить значения</button>
+									</div>
+								</div>
 							</div>
 						</div>
-						<div class="recruiter-need section__item">
+						<div class="accordion recruiter-need section__item">
 							<div class="recruiter-need__title">
-								<div class="recruiter-need__title-item">
+								<div class="recruiter-need__title-icons">
 									<div class="recruiter-need__title-icon">
 										<label class="checkbox checkbox--mini checkbox--danger">
 											<input class="checkbox__input" type="checkbox" checked>
 											<span class="checkbox__switch"></span>
 										</label>
 									</div>
-									<a href="#" class="link link--not-underline">KFC Гражданский проспект</a>
-								</div>
-								<div class="recruiter-need__title-item">
 									<div class="recruiter-need__title-icon">
 										<div class="icon icon--fz-15 icon-warning icon--color-light-gray"></div>
 									</div>
-									<button class="link link--not-underline">Санкт-Петербург ↓</button>
 								</div>
+								<button class="accordion-btn link link--medium recruiter-need__title-btn">KFC Гражданский проспект <br> Санкт-Петербург ↓</button>
 							</div>
 							<div class="recruiter-need__content">
 								<div class="recruiter-need__content-top">
@@ -254,9 +385,9 @@
 										<div class="text text--gray">16+</div>
 									</div>
 								</div>
-								<div class="bottom-need recruiter-need__content-bottom recruiter-need__content-bottom--mt-19">
+								<div class=" accordion-content bottom-need recruiter-need__content-bottom">
 									<div class="text text--right text--small text--danger bottom-need__message">Не согласованные изменения выделены красным</div>
-									<div class="bottom-need__items">
+									<div class="bottom-need__items bottom-need__items--pt-0">
 										<div class="bottom-need__item bottom-need__item--py-9">
 											<div class="bottom-need__col bottom-need__col--big">
 												<div class="text">Сотрудник (12)</div>
@@ -368,32 +499,29 @@
 									</div>
 									<div class="bottom-need__comment">
 										<textarea class="settings-input settings-input--bg settings-input--p-16-20 settings-input--mh-90">Поле для внесения текстового комментария дополнительных бонусов ресторана. Пример: «Оплачиваемый проезд, трудоустройство с локальным проживанием» и тд.</textarea>
-										<!-- <textarea class="settings-input settings-input--color-danger settings-input--p-16-20 settings-input--mh-90">Поле для внесения текстового комментария дополнительных бонусов ресторана. Пример: «Оплачиваемый проезд, трудоустройство с локальным проживанием» и тд.</textarea> -->
+										<!-- <textarea class="settings-input settings-input--color-danger settings-input--bg settings-input--p-16-20 settings-input--mh-90">Поле для внесения текстового комментария дополнительных бонусов ресторана. Пример: «Оплачиваемый проезд, трудоустройство с локальным проживанием» и тд.</textarea> -->
 									</div>
 									<div class="bottom-need__action bottom-need__action--flex">
-										<button class="link link--not-underline bottom-need__action-item bottom-need__action-item--217 js-open-popup" data-popup-name="edit-message">Редактировать <br> сообщение ресторану</button>
+										<button class="link link--medium link--not-underline bottom-need__action-item bottom-need__action-item--217 js-open-popup" data-popup-name="edit-message">Редактировать <br> сообщение ресторану</button>
 										<button class="btn btn--normal btn--px-5 bottom-need__action-item bottom-need__action-item--auto">Сохранить значения</button>
 									</div>
 								</div>
 							</div>
 						</div>
-						<div class="recruiter-need section__item">
+						<div class="accordion recruiter-need section__item">
 							<div class="recruiter-need__title">
-								<div class="recruiter-need__title-item">
+								<div class="recruiter-need__title-icons">
 									<div class="recruiter-need__title-icon">
 										<label class="checkbox checkbox--mini checkbox--danger">
 											<input class="checkbox__input" type="checkbox" checked>
 											<span class="checkbox__switch"></span>
 										</label>
 									</div>
-									<a href="#" class="link link--not-underline">KFC Гражданский проспект</a>
-								</div>
-								<div class="recruiter-need__title-item">
 									<div class="recruiter-need__title-icon">
 										<div class="icon icon--fz-15 icon-warning icon--danger"></div>
 									</div>
-									<button class="link link--not-underline">Санкт-Петербург ↓</button>
 								</div>
+								<button class="accordion-btn link link--medium recruiter-need__title-btn">KFC Гражданский проспект <br> Санкт-Петербург ↓</button>
 							</div>
 							<div class="recruiter-need__content">
 								<div class="recruiter-need__content-top">
@@ -402,6 +530,127 @@
 									</div>
 									<div class="recruiter-need__content-item">
 										<div class="text text--gray"></div>
+									</div>
+								</div>
+								<div class="accordion-content bottom-need recruiter-need__content-bottom">
+									<div class="text text--right text--small text--danger bottom-need__message">Не согласованные изменения выделены красным</div>
+									<div class="bottom-need__items bottom-need__items--pt-0">
+										<div class="bottom-need__item bottom-need__item--py-9">
+											<div class="bottom-need__col bottom-need__col--big">
+												<div class="text">Сотрудник (12)</div>
+											</div>
+											<div class="bottom-need__col">
+												<label class="checkbox checkbox--mini checkbox--danger">
+													<input class="checkbox__input" type="checkbox" checked>
+													<span class="checkbox__switch"></span>
+													<span class="checkbox__text checkbox__text--color-danger checkbox__text--fz-14">16+</span>
+												</label>
+											</div>
+											<div class="bottom-need__col">
+												<label class="checkbox checkbox--mini checkbox--danger">
+													<input class="checkbox__input" type="checkbox">
+													<span class="checkbox__switch"></span>
+													<span class="checkbox__text checkbox__text--color-danger checkbox__text--fz-14">Утро</span>
+												</label>
+											</div>
+											<div class="bottom-need__col">
+												<label class="checkbox checkbox--mini">
+													<input class="checkbox__input" type="checkbox" checked>
+													<span class="checkbox__switch"></span>
+													<span class="checkbox__text checkbox__text--fz-14">Вечер</span>
+												</label>
+											</div>
+											<div class="bottom-need__col">
+												<label class="checkbox checkbox--mini">
+													<input class="checkbox__input" type="checkbox">
+													<span class="checkbox__switch"></span>
+													<span class="checkbox__text checkbox__text--fz-14">Любое</span>
+												</label>
+											</div>
+											<div class="bottom-need__col bottom-need__col--mini">
+												<input type="text" class="settings-input settings-input--need settings-input--bg settings-input--color-danger" value="5">
+											</div>
+										</div>
+										<div class="bottom-need__item bottom-need__item--py-9">
+											<div class="bottom-need__col bottom-need__col--big">
+												<div class="text">Уборщик (4)</div>
+											</div>
+											<div class="bottom-need__col">
+												<label class="checkbox checkbox--mini">
+													<input class="checkbox__input" type="checkbox" checked>
+													<span class="checkbox__switch"></span>
+													<span class="checkbox__text checkbox__text--fz-14">16+</span>
+												</label>
+											</div>
+											<div class="bottom-need__col">
+												<label class="checkbox checkbox--mini">
+													<input class="checkbox__input" type="checkbox">
+													<span class="checkbox__switch"></span>
+													<span class="checkbox__text checkbox__text--fz-14">Утро</span>
+												</label>
+											</div>
+											<div class="bottom-need__col">
+												<label class="checkbox checkbox--mini checkbox--danger">
+													<input class="checkbox__input" type="checkbox" checked>
+													<span class="checkbox__switch"></span>
+													<span class="checkbox__text checkbox__text--color-danger checkbox__text--fz-14">Вечер</span>
+												</label>
+											</div>
+											<div class="bottom-need__col">
+												<label class="checkbox checkbox--mini">
+													<input class="checkbox__input" type="checkbox">
+													<span class="checkbox__switch"></span>
+													<span class="checkbox__text checkbox__text--fz-14">Любое</span>
+												</label>
+											</div>
+											<div class="bottom-need__col bottom-need__col--mini">
+												<input type="text" class="settings-input settings-input--need settings-input--bg" value="5">
+											</div>
+										</div>
+										<div class="bottom-need__item bottom-need__item--py-9">
+											<div class="bottom-need__col bottom-need__col--big">
+												<div class="text">Грузчик (0)</div>
+											</div>
+											<div class="bottom-need__col">
+												<label class="checkbox checkbox--mini">
+													<input class="checkbox__input" type="checkbox" checked>
+													<span class="checkbox__switch"></span>
+													<span class="checkbox__text checkbox__text--fz-14">16+</span>
+												</label>
+											</div>
+											<div class="bottom-need__col">
+												<label class="checkbox checkbox--mini">
+													<input class="checkbox__input" type="checkbox">
+													<span class="checkbox__switch"></span>
+													<span class="checkbox__text checkbox__text--fz-14">Утро</span>
+												</label>
+											</div>
+											<div class="bottom-need__col">
+												<label class="checkbox checkbox--mini">
+													<input class="checkbox__input" type="checkbox" checked>
+													<span class="checkbox__switch"></span>
+													<span class="checkbox__text checkbox__text--fz-14">Вечер</span>
+												</label>
+											</div>
+											<div class="bottom-need__col">
+												<label class="checkbox checkbox--mini">
+													<input class="checkbox__input" type="checkbox">
+													<span class="checkbox__switch"></span>
+													<span class="checkbox__text checkbox__text--fz-14">Любое</span>
+												</label>
+											</div>
+											<div class="bottom-need__col bottom-need__col--mini">
+												<input type="text" class="settings-input settings-input--need settings-input--bg settings-input--color-danger" value="5">
+											</div>
+										</div>
+									</div>
+									<div class="bottom-need__comment">
+										<textarea class="settings-input settings-input--bg settings-input--p-16-20 settings-input--mh-90">Поле для внесения текстового комментария дополнительных бонусов ресторана. Пример: «Оплачиваемый проезд, трудоустройство с локальным проживанием» и тд.</textarea>
+										<!-- <textarea class="settings-input settings-input--color-danger settings-input--bg settings-input--p-16-20 settings-input--mh-90">Поле для внесения текстового комментария дополнительных бонусов ресторана. Пример: «Оплачиваемый проезд, трудоустройство с локальным проживанием» и тд.</textarea> -->
+									</div>
+									<div class="bottom-need__action bottom-need__action--flex">
+										<button class="link link--medium link--not-underline bottom-need__action-item bottom-need__action-item--217 js-open-popup" data-popup-name="edit-message">Редактировать <br> сообщение ресторану</button>
+										<button class="btn btn--normal btn--px-5 bottom-need__action-item bottom-need__action-item--auto">Сохранить значения</button>
 									</div>
 								</div>
 							</div>
