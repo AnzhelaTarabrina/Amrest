@@ -6,19 +6,20 @@
 
   &__title {
     flex: 0 0 315px;
-    &-item {
-      display: flex;
-      gap: 10px;
-
-      &:not(:first-child) {
-        margin-top: 2px;
-      }
-    }
+    display: flex;
+    gap: 10px;
 
     &-icon {
       text-align: center;
       width: 20px;
       flex-shrink: 0;
+      margin-bottom: 2px;
+    }
+
+    &-btn {
+      text-align: left;
+      text-decoration: none;
+      line-height: 1.5;
     }
   }
 
@@ -38,11 +39,7 @@
     }
 
     &-bottom {
-      margin-top: 44px;
-
-      &--mt-19 {
-        margin-top: 19px;
-      }
+      margin-top: 19px;
     }
   }
 }

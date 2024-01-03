@@ -6,3 +6,5 @@ import './popup.js';
 import './tabs.js';
 import './file-field.js';
 import './table-hover.js';
+import './accordion.js';
+import './select-popup.js';

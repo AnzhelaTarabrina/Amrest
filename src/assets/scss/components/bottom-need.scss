@@ -1,4 +1,11 @@
 .bottom-need {
+  &__items {
+    padding-top: 24px;
+
+    &--pt-0 {
+      padding-top: 0;
+    }
+  }
   &__item {
     padding: 13px 0;
     display: flex;
